@@ -161,8 +161,8 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(element => element.tags.includes("ham"))
-//console.log(filteredFood)
+const filteredFood = foodArr.filter(element => element.tags.includes("vegetarian"))
+console.log(filteredFood)
 
 
 
