@@ -36,7 +36,7 @@ const pizza = {
     name: 'Za',
     price: 20,
     category: 'Italian',
-    popularity: 95,
+    popularity: 4.6,
     rating: 4.5,
     tags: [`quick`, `kids`]
 }
@@ -63,7 +63,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -73,7 +73,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+let price = pizza.price
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -83,6 +84,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
+let category = pizza.category
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -98,6 +101,49 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
+
+const foodArr = [
+    {
+        name: "Margherita Pizza",
+        price: 11.99,
+        category: "entree",
+        popularity: 3,
+        rating: 4.2,
+        tags: ["vegetarian", "cheese", "traditional"]
+    },
+    {
+        name: "BBQ Chicken Pizza",
+        price: 14.99,
+        category: "entree",
+        popularity: 4.5,
+        rating: 4.7,
+        tags: ["chicken", "BBQ", "meat"]
+    },
+    {
+        name: "Garlic Bread",
+        price: 4.99,
+        category: "appetizer",
+        popularity: 2.5,
+        rating: 4.0,
+        tags: ["appetizer", "bread", "garlic"]
+    },
+    {
+        name: "Veggie Supreme Pizza",
+        price: 13.49,
+        category: "entree",
+        popularity: 3.8,
+        rating: 4.4,
+        tags: ["vegetarian", "supreme", "veggies"]
+    },
+    {
+        name: "Hawaiian Pizza",
+        price: 12.99,
+        category: "entree",
+        popularity: 3.2,
+        rating: 4.3,
+        tags: ["pineapple", "ham", "sweet"]
+    }
+];
 
 
 
@@ -115,7 +161,8 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(element => element.tags.includes("ham"))
+//console.log(filteredFood)
 
 
 
@@ -160,6 +207,19 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+function filterByProperty(property, number, type){
+    let tempArray = []
+
+    if(type == 'above'){
+        tempArray = foodArr.filter((element) => element[property] > number)
+        return tempArray
+    }
+    else if(type == 'below'){
+        tempArray = foodArr.filter((element) => element[property] < number)
+        return tempArray
+    }
+}
+
 
 /*
     Invoke the `filterByProperty` function passing
@@ -169,3 +229,5 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
+
+console.log(filterByProperty('rating', 4.5, 'above'))
