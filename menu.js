@@ -32,6 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'Za',
+    price: 20,
+    category: 'Italian',
+    popularity: 95,
+    rating: 4.5,
+    tags: [`quick`, `kids`]
+}
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +53,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
