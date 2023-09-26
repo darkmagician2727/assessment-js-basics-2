@@ -141,6 +141,7 @@ manager.getEmployees()
 */
 
 //CODE HERE 
+manager.addEmployees(`Coach`)
 
 /*
     Call the `getEmployees` method on the
@@ -149,3 +150,5 @@ manager.getEmployees()
 */
 
 //CODE HERE
+
+manager.getEmployees()
