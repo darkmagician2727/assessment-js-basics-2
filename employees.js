@@ -45,7 +45,7 @@ class Employee{
 
 //CODE HERE
 
-empOne = new Employee(`Jess`, ['weekday mornings', `weekday afternoon`])
+empOne = new Employee(`Jess`, [`weekday mornings`, `weekday afternoon`])
 
 /*
     Call the `getSchedule` method on the
