@@ -83,6 +83,7 @@ console.log(calcFinalPrice(10, 5, .5))
 
 /*
     TEXT ANSWER HERE
+    
     Name - this will be a string. Needed to keep track of the customer orders
     Address - this will be a string. This will be needed for any delivery orders as well as a 2nd form of verification for customer's with the same name
     tax - this will be a number so we can do math with it. This will be used to calculate the tax of the customers cart. 
