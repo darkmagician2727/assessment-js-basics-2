@@ -56,7 +56,7 @@ class Ticket{
 */
 
 //CODE HERE
-let firstTicket = firstTicket.Ticket([`pizza`, `bread`, `soda`], `7:03pm`, 575)
+const firstTicket = new Ticket([`pizza`, `bread`, `soda`], `7:03pm`, 575)
 
 /*
     Call the `updateStatus` method on
